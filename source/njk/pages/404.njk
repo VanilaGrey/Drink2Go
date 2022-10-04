@@ -1,0 +1,36 @@
+{% extends "_layout.njk" %}
+
+{% set title = 'Error: 404' %}
+
+{% block main %}
+<section class="content page-main__content">
+  <header class="content__header">
+    <h1 class="content__heading">
+      Страница не найдена
+    </h1>
+  </header>
+  <b class="content__lead">
+    Вы можете сообщить нам об этом
+  </b>
+  <footer class="contacts content__slot">
+    <dl class="contacts__list">
+      <dt class="contacts__item">
+        Звоните:
+      </dt>
+      <dd class="contacts__description">
+        <a href="contacts__link">
+          +7 (812) 555-66-66
+        </a>
+      </dd>
+      <dt class="contacts__item">
+        Пишите:
+      </dt>
+      <dd class="contacts__description">
+        <a href="contacts__link">
+          mail@htmlacademy.ru
+        </a>
+      </dd>
+    </dl>
+  </footer>
+</section>
+{% endblock %}
