@@ -1,0 +1,25 @@
+.sort {
+  display: flex;
+}
+
+.sort__label {
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  @media (min-width: @tablet) {
+    margin-left: auto;
+  }
+
+  &::before {
+    display: none;
+  }
+}
+
+.sort__icon {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  margin-top: -5px;
+  fill: var(--color-purple);
+}

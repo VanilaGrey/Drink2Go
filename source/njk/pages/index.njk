@@ -1,0 +1,306 @@
+{% extends "_layout.njk" %}
+
+{% set title = 'Главная' %}
+
+{% block main %}
+  <section class="reviews splide">
+    <h2 class="visually-hidden">Новинки.</h2>
+    <div class="splide__track">
+      <div class="splide__list">
+        <div class="splide__slide reviews-product reviews-product--decaf-flat-white">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/slider-image-desktop1@1x.webp 1x, img/slider/slider-image-desktop1@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/slider/slider-image-desctop1@1x.png, img/slider/slider-image-desktop1@2x.png 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/slider-image-tablet1@1x.webp 1x, img/slider/slider-image-tablet1@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/slider/slider-image-tablet1@1x.png, img/slider/slider-image-tablet1@2x.png 2x">
+            <source type="image/webp" srcset="img/slider/slider-image1@1x.webp 1x, img/slider/slider-image1@2x.webp 2x">
+            <img class="reviews-product__image" src="img/slider/slider-image1@1x.png" srcset="img/slider/slider-image1@2x.png 2x" alt="Баночка бежевого цвета с чуть более темными бежевыми косыми полосками." width="280" height="280">
+          </picture>
+          <p class="caption reviews-product__caption">Новинка!</p>
+          <h3 class="title title--big reviews-product__title">Декаф Флэт Уайт</h3>
+          <p class="reviews-product__description">
+            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+          </p>
+          <p class="price price--old reviews-product__price reviews-product__price--old">295₽</p>
+          <p class="price reviews-product__price">225₽</p>
+          <a href="#" class="button reviews-product__button ">Заказать</a>
+        </div>
+        <div class="splide__slide reviews-product reviews-product--lavender-latte">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/slider-image-desktop2@1x.webp 1x, img/slider/slider-image-desktop2@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/slider/slider-image-desctop2@1x.png, img/slider/slider-image-desktop2@2x.png 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/slider-image-tablet2@1x.webp 1x, img/slider/slider-image-tablet2@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/slider/slider-image-tablet2@1x.png, img/slider/slider-image-tablet2@2x.png 2x">
+            <source type="image/webp" srcset="img/slider/slider-image2@1x.webp 1x, img/slider/slider-image2@2x.webp 2x">
+            <img class="reviews-product__image" src="img/slider/slider-image2@1x.png" srcset="img/slider/slider-image2@2x.png 2x" alt="Баночка лавандового цвета с чуть более темными лавандовыми косыми полосками." width="280" height="280">
+          </picture>
+          <p class="caption reviews-product__caption">Новинка!</p>
+          <h3 class="title title--big reviews-product__title">Лавандовый Латте</h3>
+          <p class="reviews-product__description">
+            Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+          </p>
+          <p class="price price--old reviews-product__price reviews-product__price--old">285₽</p>
+          <p class="price reviews-product__price">265₽</p>
+          <a href="#" class="button reviews-product__button button--disabled">Заказать</a>
+        </div>
+        <div class="splide__slide reviews-product reviews-product--espresso">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/slider-image-desktop3@1x.webp 1x, img/slider/slider-image-desktop3@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/slider/slider-image-desctop3@1x.png, img/slider/slider-image-desktop3@2x.png 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/slider-image-tablet3@1x.webp 1x, img/slider/slider-image-tablet3@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/slider/slider-image-tablet3@1x.png, img/slider/slider-image-tablet3@2x.png 2x">
+            <source type="image/webp" srcset="img/slider/slider-image3@1x.webp 1x, img/slider/slider-image3@2x.webp 2x">
+            <img class="reviews-product__image" src="img/slider/slider-image3@1x.png" srcset="img/slider/slider-image3@2x.png 2x" alt="Баночка серого цвета с чуть более темными серыми косыми полосками." width="280" height="280">
+          </picture>
+          <p class="caption reviews-product__caption">Новинка!</p>
+          <h3 class="title title--big reviews-product__title">Тройной Эспрессо</h3>
+          <p class="reviews-product__description">
+            Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+          </p>
+          <p class="price price--old reviews-product__price reviews-product__price--old">395₽</p>
+          <p class="price reviews-product__price">375₽</p>
+          <a href="#" class="button reviews-product__button">Заказать</a>
+        </div>
+      </div>
+    </div>
+    <div class="splide__arrows reviews__arrows">
+      <button class="splide__arrow splide__arrow--prev reviews__arrow reviews__arrow--prev" type="button" aria-label="Назад">
+        <svg class="reviews__arrow-icon" width="11" height="20" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#slider-arrow"></use>
+        </svg>
+      </button>
+      <button class="splide__arrow splide__arrow--next reviews__arrow reviews__arrow--next" type="button" aria-label="Вперед">
+        <svg class="reviews__arrow-icon" width="11" height="20" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#slider-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
+  <section class="features">
+    <p class="caption features__caption">Преимущества</p>
+    <h2 class="title features__title">Главные причины выбрать Drink2Go</h2>
+    <ul class="features__list">
+      <li class="features__item features__item--speed">
+        <svg class="features__item-icon features__item-icon--speed" width="50" height="56" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#speed"></use>
+        </svg>
+        <h3 class="title title--medium features__item-title">Скорость</h3>
+        <p class="features__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
+      </li>
+      <li class="features__item features__item--comfort">
+        <svg class="features__item-icon" width="50" height="56" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#comfort"></use>
+        </svg>
+        <h3 class="title title--medium features__item-title">Удобство</h3>
+        <p class="features__item-description">Легко помещается и в карман,
+          и в маленькую сумочку</p>
+      </li>
+      <li class="features__item features__item--energy">
+        <svg class="features__item-icon" width="42" height="56" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#energy"></use>
+        </svg>
+        <h3 class="title title--medium features__item-title">Бодрость</h3>
+        <p class="features__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+      </li>
+      <li class="features__item features__item--ecology">
+        <svg class="features__item-icon" width="46" height="56" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#ecology"></use>
+        </svg>
+        <h3 class="title title--medium features__item-title">Экологичность</h3>
+        <p class="features__item-description">Вся упаковка сделана
+          из перерабатываемых материалов</p>
+      </li>
+    </ul>
+  </section>
+  <section class="catalog">
+    <p class="caption catalog__caption">Каталог</p>
+    <h2 class="title catalog__title">Каталог кофейных напитков</h2>
+    <form class="filter catalog__filter" action="https://echo.htmlacademy.ru/" method="get">
+      <h3 class="visually-hidden">Фильтр.</h3>
+      <fieldset class="filter__group">
+        <legend class="title title--small filter__group-title filter__group-title--range">Цена</legend>
+        <div class="range">
+          <div class="range__scale">
+            <div class="range__bar">
+              <button class="range__toggle" type="button" aria-label="Изменить минимальную цену."></button>
+              <button class="range__toggle range__toggle--max" type="button" aria-label="Изменить максимальную цену."></button>
+            </div>
+          </div>
+          <div class="range__labels">
+            <label class="visually-hidden">от</label>
+            <input class="range__input" type="number" name="min-price" placeholder="0">
+            <label class="visually-hidden">до</label>
+            <input class="range__input" type="number" name="max-price" placeholder="1000" value="900">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="filter__group filter__group--column filter__group--milk">
+        <legend class="title title--small filter__group-title">Наличие молока</legend>
+        <input class="filter__input visually-hidden" type="radio" name="milk" id="all" value="all" checked>
+        <label class="label label--for-radio" for="all">Неважно</label>
+        <input class="filter__input visually-hidden" type="radio" name="milk" id="animal" value="animal">
+        <label class="label label--for-radio" for="animal">Только животное</label>
+        <input class="filter__input visually-hidden" type="radio" name="milk" id="vegetable" value="vegetable">
+        <label class="label label--for-radio" for="vegetable">Только растительное</label>
+        <input class="filter__input visually-hidden" type="radio" name="milk" id="empty" value="empty" disabled>
+        <label class="label label--for-radio label--disabled" for="empty">Без молока</label>
+      </fieldset>
+      <fieldset class="filter__group filter__group--column">
+        <legend class="title title--small filter__group-title">Страна произрастания</legend>
+        <input class="filter__input visually-hidden" type="checkbox" name="Brazil" id="Brazil" checked>
+        <label class="label label--for-checkbox" for="Brazil">Бразилия</label>
+        <input class="filter__input visually-hidden" type="checkbox" name="Ethiopia" id="Ethiopia">
+        <label class="label label--for-checkbox" for="Ethiopia">Эфиопия</label>
+        <input class="filter__input visually-hidden" type="checkbox" name="Colombia" id="Colombia">
+        <label class="label label--for-checkbox" for="Colombia">Колумбия</label>
+        <input class="filter__input visually-hidden" type="checkbox" name="CostaRica" id="CostaRica">
+        <label class="label label--for-checkbox" for="CostaRica">Коста-Рика</label>
+        <input class="filter__input visually-hidden" type="checkbox" name="Peru" id="Peru" disabled>
+        <label class="label label--disabled label--for-checkbox" for="Peru">Перу</label>
+      </fieldset>
+      <button class="button button--reverse filter__reset" type="submit">Применить фильтр</button>
+      <button class="button button--reverse filter__reset" type="reset">Сбросить фильтр</button>
+    </form>
+    <form class="sort catalog__sort" action="https://echo.htmlacademy.ru/" method="get">
+      <label class="label label--semibold sort__label" aria-label="Сортировка.">Сортировка:
+        <!-- На учебе нам говорили, что не надо менять дефолтный выпадающий список у селекта, потому что это может сказаться на
+        адекватной работе формы. Поэтому я его поменяла минимально. Но внизу разметки все же добавила стилизованны список. -->
+        <select class="select" name="sorting" data-submit="">
+          <option class="select__option select__item select__item--checked" value="default">по умолчанию</option>
+          <option class="select__option" value="cheap">сначала дорогие</option>
+          <option class="select__option select__item" value="expensive">сначала дешевые</option>
+          <option class="select__option select__item" value="popular">по популярности</option>
+          <option class="select__option select__item" value="rate">высокий рейтинг</option>
+        </select>
+        {# <svg class="sort__icon" width="10" height="10" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg> #}
+      </label>
+      <button class="visually-hidden" type="submit">Отсортировать продукты.</button>
+    </form>
+    <section class="products catalog__products">
+      <h3 class="visually-hidden">Продукты.</h3>
+      <div class="card products__item">
+        <a class="card__link" href="#">
+          <picture>
+            <source type="image/webp" srcset="img/сatalog/card-image1@1x.webp 1x, img/сatalog/card-image1@2x.webp 2x">
+            <img class="card__image" src="img/сatalog/card-image1@1x.png" srcset="img/сatalog/card-image1@2x.png 2x" alt="Баночка бежевого цвета с чуть более темными бежевыми косыми полосками." width="130" height="188">
+          </picture>
+          <h4 class="title title--medium card__title">Декаф Флэт Уайт</h4>
+          <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+        </a>
+        <button class="button card__button" type="button">В корзину
+          <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#cart-add"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="card products__item">
+        <a class="card__link" href="#">
+          <picture>
+            <source type="image/webp" srcset="img/сatalog/card-image2@1x.webp 1x, img/сatalog/card-image2@2x.webp 2x">
+            <img class="card__image" src="img/сatalog/card-image2@1x.png" srcset="img/сatalog/card-image2@2x.png 2x" alt="Баночка лавандового цвета с чуть более темными лавандовыми косыми полосками." width="130" height="188">
+          </picture>
+          <h4 class="title title--medium card__title">Декаф Флэт Уайт</h4>
+          <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+        </a>
+        <button class="button card__button" type="button">В корзину
+          <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#cart-add"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="card products__item">
+        <a class="card__link" href="#">
+          <picture>
+            <source type="image/webp" srcset="img/сatalog/card-image3@1x.webp 1x, img/сatalog/card-image3@2x.webp 2x">
+            <img class="card__image" src="img/сatalog/card-image3@1x.png" srcset="img/сatalog/card-image3@2x.png 2x" alt="Баночка серого цвета с чуть более темными серыми косыми полосками." width="130" height="188">
+          </picture>
+          <h4 class="title title--medium card__title">Декаф Флэт Уайт</h4>
+          <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+        </a>
+        <button class="button card__button" type="button">В корзину
+          <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#cart-add"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="card products__item">
+        <a class="card__link" href="#">
+          <picture>
+            <source type="image/webp" srcset="img/сatalog/card-image4@1x.webp 1x, img/сatalog/card-image4@2x.webp 2x">
+            <img class="card__image" src="img/сatalog/card-image4@1x.png" srcset="img/сatalog/card-image4@2x.png 2x" alt="Баночка розового цвета с чуть более темными розовыми косыми полосками." width="130" height="188">
+          </picture>
+          <h4 class="title title--medium card__title">Декаф Флэт Уайт</h4>
+          <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+        </a>
+        <button class="button card__button" type="button">В корзину
+          <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#cart-add"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="card products__item">
+        <a class="card__link" href="#">
+          <picture>
+            <source type="image/webp" srcset="img/сatalog/card-image5@1x.webp 1x, img/сatalog/card-image5@2x.webp 2x">
+            <img class="card__image" src="img/сatalog/card-image5@1x.png" srcset="img/сatalog/card-image5@2x.png 2x" alt="Баночка коричневого цвета с чуть более темными коричневыми косыми полосками." width="130" height="188">
+          </picture>
+          <h4 class="title title--medium card__title">Декаф Флэт Уайт</h4>
+          <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+        </a>
+        <button class="button card__button" type="button">В корзину
+          <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#cart-add"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="card products__item">
+        <a class="card__link" href="#">
+          <picture>
+            <source type="image/webp" srcset="img/сatalog/card-image6@1x.webp 1x, img/сatalog/card-image6@2x.webp 2x">
+            <img class="card__image" src="img/сatalog/card-image6@1x.png" srcset="img/сatalog/card-image6@2x.png 2x" alt="Баночка желтого цвета с чуть более темными жклтыми косыми полосками." width="130" height="188">
+          </picture>
+          <h4 class="title title--medium card__title">Декаф Флэт Уайт</h4>
+          <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+        </a>
+        <button class="button card__button" type="button">В корзину
+          <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#cart-add"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <div class="pagination catalog__pagination">
+      <a class="link pagination__link pagination__link--prev button" href="#" aria-label="Перейти на предыдущую страницу.">
+        <p class="pagination__link-description">Назад</p>
+        <svg class="pagination__link-icon" width="10" height="10" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </a>
+      <a class="link pagination__link button" href="#">1</a>
+      <a class="link pagination__link pagination__link--current button" href="#">2</a>
+      <a class="link pagination__link button" href="#">3</a>
+      <a class="link pagination__link pagination__link--next button" href="#" aria-label="Перейти на следующую страницу.">
+        <p class="pagination__link-description">Вперед</p>
+        <svg class="pagination__link__icon" width="10" height="10" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </a>
+    </div>
+  </section>
+  <section class="location">
+    <h2 class="visually-hidden">Карта местоположения интернет-магазина кофейных напитков Drink2Go.</h2>
+    <div class="location__canvas" id="location-canvas">
+      <div id="map" class="map">
+
+      </div>
+    </div>
+  </section>
+{% endblock %}

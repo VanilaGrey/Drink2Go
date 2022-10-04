@@ -1,0 +1,30 @@
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__title {
+  margin-top: 0;
+}
+
+.services__link {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--color-light-purple);
+    outline: transparent;
+  }
+
+  &:active {
+    color: var(--color-dark-purple);
+  }
+}

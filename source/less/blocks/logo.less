@@ -1,0 +1,43 @@
+.logo {
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+
+  &--short {
+    @media (min-width: @tablet-desktop) {
+      display: none;
+    }
+  }
+
+  &--middle {
+    display: none;
+    width: 82px;
+
+    @media (min-width: @tablet-desktop) {
+      display: flex;
+    }
+
+    @media (min-width: @desktop) {
+      display: none;
+    }
+  }
+
+  &--full {
+    display: none;
+    width: 170px;
+
+    @media (min-width: @desktop) {
+      display: flex;
+    }
+  }
+}
+
+.logo__icon {
+  color: var(--color-purple);
+}

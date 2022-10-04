@@ -1,0 +1,93 @@
+.label {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 34px;
+  font-size: 16px;
+  line-height: 24px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-grey);
+  }
+
+  &::after {
+    top: 12px;
+    left: 4px;
+    display: none;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    background-color: var(--color-purple);
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: var(--color-light-purple);
+      outline: transparent;
+    }
+
+    &::after {
+      background-color: var(--color-light-grey-25);
+    }
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--for-checkbox {
+    padding-left: 52px;
+
+    &::before {
+      width: 42px;
+      background-color: var(--color-grey);
+      border: none;
+      border-radius: 12px;
+    }
+
+    &::after {
+      top: 10px;
+      left: 2px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: var(--color-white);
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: var(--color-light-grey-25);
+      border: 2px solid var(--color-light-purple);
+      outline: transparent;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      background-color: var(--color-white);
+      outline: transparent;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--for-radio {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

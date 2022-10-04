@@ -1,29 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Template &gt; {{ title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/opensansbold.woff2"as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="#">
-    <link rel="icon" href="#" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="#">
-    <link rel="manifest" href="favicons.webmanifest">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <header>
-    </header>
-    <main>
-      {% block main %}{% endblock %}
-    </main>
-    <footer>
-
-    </footer>
-    <script src="js/script.js">
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Интернет-магазин кофейных напитков "Drink2Go"</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/splide.min.css">
+  <link rel="stylesheet" href="css/leaflet.css">
+</head>
+<body class="page page__body">
+  <header class="page-header page__header">
+    <a class="logo page-header__logo logo--short" href="index.html" {{ 'aria-current="page"' if page == 'index' }} aria-label="На главную.">
+      <svg class="logo__image" width="32" height="36" aria-label="Логотип «Drink2Go»" role="img" focusable="false">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+    </a>
+    <a class="logo page-header__logo logo--middle" href="index.html" {{ 'aria-current="page"' if page == 'index' }} aria-label="На главную.">
+      <svg class="logo__image" width="82" height="36" aria-label="Логотип «Drink2Go»" role="img" focusable="false">
+        <use xlink:href="img/sprite.svg#logo-middle"></use>
+      </svg>
+    </a>
+    <a class="logo page-header__logo logo--full" href="index.html" {{ 'aria-current="page"' if page == 'index' }} aria-label="На главную.">
+      <svg class="logo__image" width="170" height="36" aria-label="Логотип «Drink2Go»" role="img" focusable="false">
+        <use xlink:href="img/sprite.svg#logo-full"></use>
+      </svg>
+    </a>
+    <p class="sign sign--small">Интернет-магазин кофейных напитков</p>
+    <div class="user-menu">
+      <a class= "user-menu__link" href="#" aria-label="Нажать, чтобы зайти в личный кабинет.">
+        <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#log-in"></use>
+        </svg>
+        <p class="user-menu__label">Войти</p>
+      </a>
+      <a class= "user-menu__link user-menu__link--cart" href="#" aria-label="Нажать, чтобы зайти в корзину.">
+        <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+        <p class="user-menu__label">Корзина</p>
+      </a>
+    </div>
+    <nav class="main-nav main-nav--closed">
+      <!-- При выключенном JS к меню добавить класс main-nav--no-js, чтобы меню было открыто -->
+      <button class="main-nav__toggle" type="button" aria-label="Нажать, чтобы открыть или закрыть меню.">
+      </button>
+      <div class="nav main-nav__list">
+        <a class="nav__link nav__link--current {{ 'nav__link--current' if page == 'index' }}" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
+          Главная
+        </a>
+        <a class="nav__link {{ 'nav__link--current' if page == 'catalog' }}" href="catalog.html" {{ 'aria-current="page"' if page == 'caatalog' }}>
+          Каталог
+        </a>
+        <a class="nav__link {{ 'nav__link--current' if page == 'delivery' }}" href="delivery.html" {{ 'aria-current="page"' if page == 'delivery' }}>
+          Доставка
+        </a>
+        <a class="nav__link" href="https://htmlacademy.ru">
+          О нас
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main class="page__main">
+    <h1 class="visually-hidden">Интернет-магазин кофейных напитков "Drink2Go".</h1>
+  {% block main %}{% endblock %}
+  </main>
+  <footer class="page-footer">
+    <a class= "logo logo--middle page-footer__logo page-footer__logo--middle" href="index.html" aria-current="page" aria-label="На главную.">
+      <svg class="logo__image" width="82" height="36" aria-label="Логотип «Drink2Go»" role="img">
+        <use xlink:href="img/sprite.svg#logo-middle"></use>
+      </svg>
+    </a>
+    <a class="logo logo--full page-footer__logo page-footer__logo--full " href="index.html" aria-current="page" aria-label="На главную.">
+      <svg class="logo__image" width="170" height="36" aria-label="Логотип «Drink2Go»" role="img">
+        <use xlink:href="img/sprite.svg#logo-full"></use>
+      </svg>
+    </a>
+    <p class="sign page-footer__sign">Интернет-магазин кофейных напитков</p>
+    <div class="social page-footer__social">
+      <a class="social__item" href="#" aria-label="Переход на страницу во Вконтакте интернет-магазина «Drink2Go».">
+        <svg class="social__item__icon" width="20" height="20" aria-hidden="true" focusable="false">
+        </svg>
+      </a>
+      <a class="social__item" href="#" aria-label="Переход на страницу во Вконтакте интернет-магазина «Drink2Go».">
+        <svg class="social__item-icon" width="22" height="22" aria-hidden="true" focusable="false">
+          <use xlink:href="img/sprite.svg#pinterest"></use>
+        </svg>
+      </a>
+      <a class="social__item" href="#" aria-label="Переход на страницу во Вконтакте интернет-магазина «Drink2Go».">
+        <svg class="social__item-icon" width="20" height="20" aria-hidden="true" focusable="false">
+          <use xlink:href="img/sprite.svg#ok"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="services page-footer__links">
+      <h2 class="title title--color services__title">Интернет-магазин</h2>
+      <a class= "services__link page-footer__links" href="#">Каталог</a>
+      <a class= "services__link page-footer__links" href="#">Доставка</a>
+      <a class= "services__link page-footer__links" href="#">Способы оплаты</a>
+      <a class= "services__link page-footer__links" href="#">О нас</a>
+    </div>
+    <div class="services page-footer__links page-footer__links--media">
+      <h2 class="title title--color services__title">Медиа</h2>
+      <a class= "services__link page-footer__links" href="#">Блог</a>
+      <a class= "services__link page-footer__links" href="#">Информация для СМИ</a>
+      <a class= "services__link page-footer__links" href="#">Правовая информация</a>
+    </div>
+    <div class="contacts page-footer__contacts page-footer__links">
+      <h2 class="title title--color contacts__title">Контакты</h2>
+      <p class="contacts__item">
+        <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#pin"></use>
+        </svg>
+        Санкт-Петербург, набережная реки Карповки, дом 5
+      </p>
+      <a class= "contacts__item" href="tel:+79999999999">
+        <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#tel"></use>
+        </svg>
+        +7 (999) 999-99-99
+      </a>
+    </div>
+    <p class="logo-academy page-footer__logo-academy page-footer__links">Разработано в
+      <a class= "logo-academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        <svg class="logo-academy__icon" width="12" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#academy"></use>
+        </svg>
+      </a>
+    </p>
+  </footer>
+  <!-- Выпадающий список для селекта -->
+  <ul class="select-list">
+    <li class="select-item select-item--checked">по умолчанию</li>
+    <li class="select-item">сначала дорогие</li>
+    <li class="select-item">сначала дешевые</li>
+    <li class="select-item">высокий рейтинг</li>
+  </ul>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/libs/leaflet.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
 </html>
