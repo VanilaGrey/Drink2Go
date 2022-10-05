@@ -92,8 +92,7 @@
           <use xlink:href="img/sprite.svg#comfort"></use>
         </svg>
         <h3 class="title title--medium features__item-title">Удобство</h3>
-        <p class="features__item-description">Легко помещается и в карман,
-          и в маленькую сумочку</p>
+        <p class="features__item-description">Легко помещается и в карман, <br> и в маленькую сумочку</p>
       </li>
       <li class="features__item features__item--energy">
         <svg class="features__item-icon" width="42" height="56" aria-hidden="true" focusable="false" role="img">
@@ -107,8 +106,7 @@
           <use xlink:href="img/sprite.svg#ecology"></use>
         </svg>
         <h3 class="title title--medium features__item-title">Экологичность</h3>
-        <p class="features__item-description">Вся упаковка сделана
-          из перерабатываемых материалов</p>
+        <p class="features__item-description">Вся упаковка сделана <br> из перерабатываемых материалов</p>
       </li>
     </ul>
   </section>
@@ -135,7 +133,7 @@
         </div>
       </fieldset>
       <fieldset class="filter__group filter__group--column filter__group--milk">
-        <legend class="title title--small filter__group-title">Наличие молока</legend>
+        <legend class="title title--small title--milk filter__group-title">Наличие молока</legend>
         <input class="filter__input visually-hidden" type="radio" name="milk" id="all" value="all" checked>
         <label class="label label--for-radio" for="all">Неважно</label>
         <input class="filter__input visually-hidden" type="radio" name="milk" id="animal" value="animal">
@@ -158,8 +156,8 @@
         <input class="filter__input visually-hidden" type="checkbox" name="Peru" id="Peru" disabled>
         <label class="label label--disabled label--for-checkbox" for="Peru">Перу</label>
       </fieldset>
-      <button class="button button--reverse filter__reset" type="submit">Применить фильтр</button>
-      <button class="button button--reverse filter__reset" type="reset">Сбросить фильтр</button>
+      <button class="button button--reverse filter__button filter__button--submit" type="submit">Применить фильтр</button>
+      <button class="button button--reverse filter__button filter__button--reset" type="reset">Сбросить фильтр</button>
     </form>
     <form class="sort catalog__sort" action="https://echo.htmlacademy.ru/" method="get">
       <label class="label label--semibold sort__label" aria-label="Сортировка.">Сортировка:
@@ -172,9 +170,9 @@
           <option class="select__option select__item" value="popular">по популярности</option>
           <option class="select__option select__item" value="rate">высокий рейтинг</option>
         </select>
-        {# <svg class="sort__icon" width="10" height="10" aria-hidden="true" focusable="false" role="img">
+        <svg class="sort__icon" width="10" height="10" aria-hidden="true" focusable="false" role="img">
           <use xlink:href="img/sprite.svg#arrow"></use>
-        </svg> #}
+        </svg>
       </label>
       <button class="visually-hidden" type="submit">Отсортировать продукты.</button>
     </form>

@@ -8,7 +8,7 @@
 .filter__group {
   max-width: 280px;
   margin-right: auto;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   margin-left: auto;
   padding: 0;
   border: none;
@@ -49,6 +49,8 @@
   }
 
   &--milk {
+    margin-bottom: 21px;
+
     @media (min-width: @tablet) {
       margin-right: 38px;
     }
@@ -56,14 +58,15 @@
 }
 
 .filter__group-title {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet) {
     padding-inline: 0;
   }
 
   &--range {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
+    padding: 0;
 
     @media (min-width: @desktop) {
       margin-bottom: 26px;
@@ -121,12 +124,11 @@
   }
 }
 
-.filter__reset {
-  width: 280px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-bottom: 36px;
-  margin-left: auto;
+.filter__button {
+  width: 160px;
+  margin: 35px auto 25px;
+  padding: 10px 10px 11px 10px;
+
 
   @media (min-width: @tablet) {
     width: 222px;
@@ -140,5 +142,16 @@
     width: 318px;
     margin-top: 10px;
     margin-left: 0;
+  }
+
+  &--submit {
+    font-size: 13px;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+  }
+
+  &--reset {
+    margin: 25px auto 40px;
+    font-size: 14px;
   }
 }

@@ -3,7 +3,7 @@ const BASE_COORDS = {
   lng: 30.317300
 };
 
-const ZOOM = 20;
+const ZOOM = 22;
 const MIN_SIZE = 38;
 const MAX_SIZE = 50;
 const MIN_SIZE_ANCHOR = 25;
@@ -31,7 +31,6 @@ const PinIcon = L.icon({
 const mainPin = L.marker(
   BASE_COORDS,
   {
-    draggable: true,
     icon: PinIcon,
   }
 );
