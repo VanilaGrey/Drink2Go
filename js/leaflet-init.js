@@ -12,8 +12,6 @@ const MAX_SIZE_ANCHOR = 52;
 const map = L.map('map')
   .setView(BASE_COORDS, ZOOM);
 
-// const mapLoaded = map._loaded;
-
 // Добавляем слой с нужной картой
 L.tileLayer(
   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
