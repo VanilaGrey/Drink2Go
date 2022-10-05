@@ -69,5 +69,8 @@
     "node": "^16"
   },
   "type": "module",
-  "pre-commit": "test"
+  "pre-commit": "test",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.3"
+  }
 }

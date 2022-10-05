@@ -5,12 +5,12 @@
   font-weight: 800;
   font-size: 24px;
   line-height: 24px;
-  color: var(--color-black);
+  color: var(--color-purple);
   text-transform: uppercase;
   letter-spacing: 0.02em;
 
   &--short {
-    @media (min-width: @tablet-desktop) {
+    @media (min-width: @tablet) {
       display: none;
     }
   }
@@ -19,7 +19,7 @@
     display: none;
     width: 82px;
 
-    @media (min-width: @tablet-desktop) {
+    @media (min-width: @tablet) {
       display: flex;
     }
 
@@ -38,6 +38,6 @@
   }
 }
 
-.logo__icon {
-  color: var(--color-purple);
+.logo__image {
+  fill: var(--color-purple);
 }
