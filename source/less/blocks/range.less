@@ -34,11 +34,17 @@
   appearance: textfield;
 
   @media (min-width: @tablet) {
-    max-width: 96px;
+    max-width: 93px;
+    margin-right: -4px;
+    margin-left: 7px;
+    padding: 6px 5px;
   }
 
   @media (min-width: @desktop) {
     max-width: 134px;
+    margin-right: 1px;
+    margin-left: -1px;
+    padding: 6px 5px;
   }
 
   &::-outer-spin-button,
@@ -73,6 +79,7 @@
 
   @media (min-width: @tablet) {
     min-width: 223px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: @desktop) {
@@ -88,10 +95,12 @@
   background-color: var(--color-light-purple);
 
   @media (min-width: @tablet) {
+    left: 7px;
     min-width: 192px;
   }
 
   @media (min-width: @desktop) {
+    left: -1px;
     min-width: 274px;
   }
 }
@@ -138,7 +147,7 @@
     left: 235px;
 
     @media (min-width: @tablet) {
-      left: 180px;
+      left: 176px;
     }
 
     @media (min-width: @desktop) {
@@ -169,5 +178,13 @@
     margin-top: -1px;
     margin-left: -5px;
     background-color: var(--color-grey);
+
+    @media (min-width: @tablet) {
+      margin-left: 0;
+    }
+
+    @media (min-width: @desktop) {
+      margin-left: -6px;
+    }
   }
 }

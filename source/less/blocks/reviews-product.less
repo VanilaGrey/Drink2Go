@@ -17,7 +17,7 @@
     grid-template-columns: 1fr 80px 25px 600px 30px min-content 6px min-content 20px auto 80px 1fr;
     grid-template-rows: 30px 1fr auto 4px auto 16px auto 40px auto 1fr 1fr;
     padding-top: 30px;
-    padding-bottom: 86px;
+    padding-bottom: 84px;
   }
 
   &--decaf-flat-white {
@@ -73,8 +73,7 @@
     grid-column-start: 6;
     grid-row-end: 6;
     grid-row-start: 5;
-    margin-bottom: 40px;
-    text-align: left;
+    margin-bottom: 46px;
   }
 }
 
@@ -85,7 +84,7 @@
 
   @media (min-width: @tablet) {
     order: 2;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: @desktop) {
@@ -93,7 +92,7 @@
     grid-column-start: 6;
     grid-row-end: 6;
     grid-row-start: 5;
-    margin-top: 56px;
+    margin-top: 57px;
     margin-bottom: 0;
     text-align: left;
   }
@@ -119,19 +118,29 @@
     grid-column-start: 6;
     grid-row-end: 8;
     grid-row-start: 7;
+    width: 95%;
     max-width: 625px;
     margin: 0;
+    padding-right: 45px;
+    padding-left: 0;
     text-align: left;
+  }
+}
+
+.reviews-product__visually-hidden {
+  @media @mobile {
+    display: none;
   }
 }
 
 .reviews-product__button {
   min-width: 113px;
   min-height: 40px;
-  margin-left: 20px;
+  margin-left: 22px;
 
   @media (min-width: @tablet) {
     order: 6;
+    margin-left: 20px;
     font-size: 16px;
   }
 

@@ -1,8 +1,16 @@
 .price {
-  margin: 0 0 0 -2px;
+  margin: 0;
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
+
+  &--card {
+    margin-left: -2px;
+  }
+
+  @media (min-width: @tablet) {
+    margin: 0 2px 0 0;
+  }
 
   &--old {
     margin-right: 5px;

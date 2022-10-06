@@ -1,5 +1,10 @@
 .contacts {
+  margin-top: 1px;
   padding-bottom: 18px;
+
+  @media (min-width: @desktop) {
+    margin-top: 10px;
+  }
 }
 
 .contacts__item {
@@ -11,7 +16,7 @@
 
   @media (min-width: @tablet) {
     position: relative;
-    padding-left: 19px;
+    padding-left: 20px;
   }
 }
 
@@ -27,4 +32,8 @@
 .contacts__title {
   margin-top: 0;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 20px;
+  }
 }

@@ -23,7 +23,12 @@
     font-size: 18px;
     line-height: 32px;
 
+    @media @mobile {
+      margin-bottom: 4px;
+    }
+
     @media (min-width: @tablet) {
+      margin-left: 0;
       font-size: 24px;
       line-height: 36px;
     }
@@ -37,8 +42,16 @@
   }
 
   &--milk {
-    margin-bottom: 22px;
-    margin-left: -3px;
+    margin-bottom: 19px;
+
+    @media @mobile {
+      margin-bottom: 22px;
+      margin-left: -3px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-bottom: 20px;
+    }
   }
 
   &--color {
@@ -47,5 +60,15 @@
     text-align: left;
     color: var(--color-purple);
     letter-spacing: 0.02em;
+  }
+
+  &--features {
+    @media (min-width: @tablet) {
+      margin-left: 10px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-left: 25px;
+    }
   }
 }
