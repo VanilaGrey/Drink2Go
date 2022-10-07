@@ -4,12 +4,14 @@
 
 .sort__label {
   position: relative;
-  margin-bottom: 0;
+  display: flex;
+  margin: 0 0 0 3px;
   padding-left: 0;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
+    margin-right: -6px;
     margin-bottom: 3px;
-    margin-left: 446px;
+    margin-left: auto;
   }
 
   &::before {
@@ -20,7 +22,11 @@
 .sort__icon {
   position: absolute;
   top: 50%;
-  right: 7px;
-  margin-top: -5px;
+  right: 16px;
+  margin-top: -6px;
   fill: var(--color-purple);
+
+  @media (min-width: @desktop) {
+    margin-top: -2px;
+  }
 }

@@ -1,5 +1,5 @@
 .filter {
-  @media (min-width: @tablet) {
+  @media @tablet {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 19px;
@@ -14,7 +14,7 @@
   padding: 0;
   border: none;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     margin-right: 25px;
     margin-left: 0;
   }
@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: @tablet) {
+    @media @tablet {
       margin-left: 0;
     }
 
@@ -52,7 +52,7 @@
   &--milk {
     margin-bottom: 21px;
 
-    @media (min-width: @tablet) {
+    @media @tablet {
       margin-right: 38px;
     }
 
@@ -65,7 +65,7 @@
 .filter__group-title {
   margin-bottom: 22px;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     padding-inline: 0;
     margin-bottom: 19px;
   }
@@ -74,7 +74,7 @@
     margin-bottom: 33px;
     padding: 0;
 
-    @media (min-width: @tablet) {
+    @media @tablet {
       margin-bottom: 30px;
     }
 
@@ -101,6 +101,7 @@
 
   & + .label--for-checkbox::after {
     left: 20px;
+    transition: left 0.25s, background-color 0.25s;
   }
 }
 
@@ -140,7 +141,7 @@
   padding: 10px 10px 11px 10px;
 
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     width: 149px;
     margin: 16px 24px 26px auto;
     padding: 5px 4px;
@@ -158,7 +159,7 @@
     color: var(--color-white);
     background-color: var(--color-purple);
 
-    @media (min-width: @tablet) {
+    @media @tablet {
       font-size: 14px;
     }
 
@@ -172,7 +173,7 @@
     margin: 25px auto 40px;
     font-size: 14px;
 
-    @media (min-width: @tablet) {
+    @media @tablet {
       margin: 18px 227px 0 0;
     }
 

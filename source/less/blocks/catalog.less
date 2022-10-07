@@ -4,7 +4,7 @@
   padding-bottom: 44px;
   background-color: var(--color-lightest-grey);
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     padding-top: 80px;
     padding-bottom: 90px;
   }
@@ -32,7 +32,7 @@
 }
 
 .catalog__filter {
-  @media (min-width: @tablet) {
+  @media @tablet {
     align-items: flex-start;
   }
 
@@ -62,7 +62,7 @@
 .catalog__sort {
   margin-bottom: 20px;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     margin-bottom: 26px;
   }
 
@@ -71,7 +71,7 @@
     grid-column-start: 4;
     grid-row-end: 6;
     grid-row-start: 5;
-    margin-top: 17px;
+    margin-top: 20px;
     margin-bottom: 0;
     margin-left: auto;
   }
@@ -88,10 +88,12 @@
 }
 
 .catalog__pagination {
+  display: flex;
   margin-top: 40px;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     width: max-content;
+    margin-right: 8px;
     margin-left: auto;
   }
 

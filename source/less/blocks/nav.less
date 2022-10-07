@@ -2,7 +2,7 @@
   z-index: 1;
   border-top: 1px solid var(--color-light-grey);
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     align-items: center;
     min-height: 80px;
     border-top: none;
@@ -21,7 +21,7 @@
   letter-spacing: 0.02em;
   border-bottom: 1px solid var(--color-light-grey);
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,13 +51,13 @@
   }
 
   &--current {
-    @media (min-width: @tablet) {
+    @media @tablet {
       position: relative;
       color: var(--color-purple);
     }
 
     &::after {
-      @media (min-width: @tablet) {
+      @media @tablet {
         content: "";
         position: absolute;
         right: 0;

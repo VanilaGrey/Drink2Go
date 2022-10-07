@@ -12,9 +12,9 @@
   <link rel="preload" href="fonts/Montserrat-ExtraBold.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/splide.min.css">
   <link rel="stylesheet" href="css/leaflet.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page page__body">
   <header class="page-header page__header">
@@ -35,25 +35,24 @@
     </a>
     <p class="sign sign--small">Интернет-магазин кофейных напитков</p>
     <div class="user-menu">
-      <a class= "user-menu__link" href="#" aria-label="Нажать, чтобы зайти в личный кабинет.">
+      <a class= "user-menu__link" href="#!" aria-label="Нажать, чтобы зайти в личный кабинет.">
         <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
           <use xlink:href="img/sprite.svg#log-in"></use>
         </svg>
         <p class="user-menu__label">Войти</p>
       </a>
-      <a class= "user-menu__link user-menu__link--cart" href="#" aria-label="Нажать, чтобы зайти в корзину.">
+      <a class= "user-menu__link user-menu__link--cart" href="#!" aria-label="Нажать, чтобы зайти в корзину.">
         <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
           <use xlink:href="img/sprite.svg#cart"></use>
         </svg>
         <p class="user-menu__label">Корзина</p>
       </a>
     </div>
-    <nav class="main-nav main-nav--closed">
-      <!-- При выключенном JS к меню добавить класс main-nav--no-js, чтобы меню было открыто -->
-      <button class="main-nav__toggle" type="button" aria-label="Нажать, чтобы открыть или закрыть меню.">
+    <nav class="main-nav main-nav--closed main-nav--no-js">
+      <button class="main-nav__toggle main-nav__toggle--no-js" type="button" aria-label="Нажать, чтобы открыть или закрыть меню.">
       </button>
       <div class="nav main-nav__list">
-        <a class="nav__link nav__link--current {{ 'nav__link--current' if page == 'index' }}" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
+        <a class="nav__link {{ 'nav__link--current' if page == 'index' }}" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
           Главная.
         </a>
         <a class="nav__link {{ 'nav__link--current' if page == 'catalog' }}" href="catalog.html" {{ 'aria-current="page"' if page == 'caatalog' }}>
@@ -85,17 +84,17 @@
     </a>
     <p class="sign page-footer__sign">Интернет-магазин кофейных напитков</p>
     <div class="social page-footer__social">
-      <a class="social__item" href="#" aria-label="Переход на страницу во Вконтакте интернет-магазина «Drink2Go».">
+      <a class="social__item" href="#!" aria-label="Переход на страницу во Вконтакте интернет-магазина «Drink2Go».">
         <svg class="social__item__icon" width="20" height="20" aria-hidden="true" focusable="false">
           <use xlink:href="img/sprite.svg#vk"></use>
         </svg>
       </a>
-      <a class="social__item" href="#" aria-label="Переход на страницу в Пинтерест интернет-магазина «Drink2Go».">
+      <a class="social__item" href="#!" aria-label="Переход на страницу в Пинтерест интернет-магазина «Drink2Go».">
         <svg class="social__item-icon" width="22" height="22" aria-hidden="true" focusable="false">
           <use xlink:href="img/sprite.svg#pinterest"></use>
         </svg>
       </a>
-      <a class="social__item" href="#" aria-label="Переход на страницу в Одноклассниках интернет-магазина «Drink2Go».">
+      <a class="social__item" href="#!" aria-label="Переход на страницу в Одноклассниках интернет-магазина «Drink2Go».">
         <svg class="social__item-icon" width="20" height="20" aria-hidden="true" focusable="false">
           <use xlink:href="img/sprite.svg#ok"></use>
         </svg>
@@ -103,26 +102,26 @@
     </div>
     <div class="services page-footer__links">
       <h2 class="title title--color services__title">Интернет-магазин</h2>
-      <a class= "services__link page-footer__link" href="#">Каталог</a>
-      <a class= "services__link page-footer__link" href="#">Доставка</a>
-      <a class= "services__link page-footer__link" href="#">Способы оплаты</a>
-      <a class= "services__link page-footer__link" href="#">О нас</a>
+      <a class= "services__link page-footer__link" href="#!">Каталог</a>
+      <a class= "services__link page-footer__link" href="#!">Доставка</a>
+      <a class= "services__link page-footer__link" href="#!">Способы оплаты</a>
+      <a class= "services__link page-footer__link" href="#!">О нас</a>
     </div>
     <div class="services page-footer__links page-footer__links--media">
       <h2 class="title title--color services__title">Медиа</h2>
-      <a class= "services__link page-footer__link" href="#">Блог</a>
-      <a class= "services__link page-footer__link" href="#">Информация для СМИ</a>
-      <a class= "services__link page-footer__link" href="#">Правовая информация</a>
+      <a class= "services__link page-footer__link" href="#!">Блог</a>
+      <a class= "services__link page-footer__link" href="#!">Информация для СМИ</a>
+      <a class= "services__link page-footer__link" href="#!">Правовая информация</a>
     </div>
     <div class="contacts page-footer__contacts page-footer__links">
       <h2 class="title title--color contacts__title">Контакты</h2>
       <p class="contacts__item">
-        <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false" role="img">
+        <svg class="contacts__icon contacts__icon--pin" width="13" height="16" aria-hidden="true" focusable="false" role="img">
           <use xlink:href="img/sprite.svg#pin"></use>
         </svg>
         Санкт-Петербург, набережная реки Карповки, дом 5
       </p>
-      <a class= "contacts__item" href="tel:+79999999999">
+      <a class="contacts__item" href="tel:+79999999999">
         <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false" role="img">
           <use xlink:href="img/sprite.svg#tel"></use>
         </svg>

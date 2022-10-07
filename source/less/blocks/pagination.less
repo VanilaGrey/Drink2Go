@@ -12,7 +12,7 @@
   background-color: var(--color-white);
   border-radius: 4px;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     font-size: 14px;
   }
 
@@ -21,7 +21,7 @@
   }
 
   &:not(:last-child) {
-    margin-right: 17px;
+    margin-right: 20px;
   }
 
   &:hover,
@@ -51,6 +51,7 @@
 
   &--current {
     font-weight: 600;
+    font-size: 16px;
     color: var(--color-black);
     background-color: transparent;
 
@@ -75,7 +76,7 @@
 
   &--prev,
   &--next {
-    @media (min-width: @tablet) {
+    @media @tablet {
       box-sizing: border-box;
       width: fit-content;
       padding-top: 8px;
@@ -89,7 +90,7 @@
 .pagination__link-description {
   display: none;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     position: relative;
     display: block;
     margin: 0;
@@ -99,7 +100,7 @@
 .pagination__link-icon {
   fill: var(--color-purple);
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     display: none;
   }
 }

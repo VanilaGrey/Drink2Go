@@ -1,6 +1,6 @@
 .contacts {
   margin-top: 1px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
 
   @media (min-width: @desktop) {
     margin-top: 10px;
@@ -8,22 +8,30 @@
 }
 
 .contacts__item {
+  display: flex;
   margin-top: 0;
 
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     position: relative;
     padding-left: 20px;
   }
 }
 
 .contacts__icon {
-  margin-right: 4px;
+  margin-top: 2px;
+  margin-right: 6px;
 
-  @media (min-width: @tablet) {
+  &--pin {
+    @media @mobile {
+      width: 19px;
+    }
+  }
+
+  @media @tablet {
     position: absolute;
     left: 0;
   }
@@ -31,9 +39,9 @@
 
 .contacts__title {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     margin-bottom: 20px;
   }
 }

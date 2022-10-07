@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   margin-top: 20px;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     display: grid;
     grid-template-columns: 20px 222px 30px 222px 30px 222px 20px;
     grid-template-rows: auto 30px auto 30px auto;
@@ -20,7 +20,7 @@
   margin-top: 2px;
   margin-left: 20px;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     grid-column-end: 3;
     grid-column-start: 2;
     grid-row-end: 2;
@@ -37,13 +37,13 @@
   &--middle {
     display: flex;
 
-    @media (min-width: @tablet) {
+    @media @tablet {
       display: none;
     }
   }
 
   &--full {
-    @media (min-width: @tablet) {
+    @media @tablet {
       display: flex;
     }
   }
@@ -63,7 +63,7 @@
   margin-bottom: 20px;
   margin-left: auto;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     grid-column-end: 7;
     grid-column-start: 6;
     grid-row-end: 2;
@@ -88,7 +88,7 @@
   padding-top: 20px;
   border-top: 1px solid var(--color-light-grey);
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     grid-column-end: 3;
     grid-column-start: 2;
     grid-row-end: 4;
@@ -106,7 +106,7 @@
   }
 
   &:not(:nth-last-child(2)) {
-    @media (min-width: @tablet) {
+    @media @tablet {
       margin-bottom: 10px;
       padding-bottom: 28px;
     }
@@ -118,7 +118,7 @@
 
 
   &--media {
-    @media (min-width: @tablet) {
+    @media @tablet {
       grid-column-end: 5;
       grid-column-start: 4;
       grid-row-end: 4;
@@ -135,7 +135,7 @@
 }
 
 .page-footer__contacts {
-  @media (min-width: @tablet) {
+  @media @tablet {
     grid-column-end: 7;
     grid-column-start: 6;
     grid-row-end: 4;
@@ -153,7 +153,7 @@
 .page-footer__logo-academy {
   margin-bottom: 10px;
 
-  @media (min-width: @tablet) {
+  @media @tablet {
     grid-column-end: 8;
     grid-column-start: 1;
     grid-row-end: 5;
