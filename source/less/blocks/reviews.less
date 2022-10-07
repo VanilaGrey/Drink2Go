@@ -51,12 +51,12 @@
   background-color: transparent;
   border: none;
 
-  @media @tablet {
+  @media (min-width: @tablet) {
     width: 80px;
     height: 640px;
   }
 
-  @media @tablet {
+  @media (min-width: @tablet) {
     height: 100%;
   }
 
@@ -73,7 +73,7 @@
     &:hover,
     &:focus,
     &:active {
-      background: transparent;
+      background-color: transparent;
     }
 
     .reviews__arrow-icon {
@@ -83,6 +83,7 @@
 
   &--prev {
     left: 0;
+    transform: rotate(-180deg);
   }
 
   &--next {

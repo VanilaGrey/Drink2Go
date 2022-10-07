@@ -12,7 +12,7 @@
   background-color: var(--color-white);
   border-radius: 4px;
 
-  @media @tablet {
+  @media (min-width: @tablet) {
     font-size: 14px;
   }
 
@@ -76,13 +76,10 @@
 
   &--prev,
   &--next {
-    @media @tablet {
+    @media (min-width: @tablet) {
       box-sizing: border-box;
       width: fit-content;
-      padding-top: 8px;
-      padding-right: 20px;
-      padding-bottom: 8px;
-      padding-left: 20px;
+      padding: 8px 20px;
     }
   }
 }
@@ -90,7 +87,7 @@
 .pagination__link-description {
   display: none;
 
-  @media @tablet {
+  @media (min-width: @tablet) {
     position: relative;
     display: block;
     margin: 0;
@@ -100,7 +97,7 @@
 .pagination__link-icon {
   fill: var(--color-purple);
 
-  @media @tablet {
+  @media (min-width: @tablet) {
     display: none;
   }
 }

@@ -2,7 +2,7 @@
   z-index: 1;
   border-top: 1px solid var(--color-light-grey);
 
-  @media @tablet {
+  @media (min-width: @tablet) {
     align-items: center;
     min-height: 80px;
     border-top: none;
@@ -21,15 +21,13 @@
   letter-spacing: 0.02em;
   border-bottom: 1px solid var(--color-light-grey);
 
-  @media @tablet {
+  @media (min-width: @tablet) {
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     min-height: 80px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding: 20px;
     border-bottom: none;
 
     &:hover,
@@ -51,13 +49,13 @@
   }
 
   &--current {
-    @media @tablet {
+    @media (min-width: @tablet) {
       position: relative;
       color: var(--color-purple);
     }
 
     &::after {
-      @media @tablet {
+      @media (min-width: @tablet) {
         content: "";
         position: absolute;
         right: 0;

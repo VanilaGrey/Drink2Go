@@ -15,23 +15,18 @@
     margin-bottom: 16px;
   }
 
-  @media @tablet {
+  @media (min-width: @tablet) {
     position: relative;
     padding-left: 20px;
   }
 }
 
 .contacts__icon {
+  flex-shrink: 0;
   margin-top: 2px;
   margin-right: 6px;
 
-  &--pin {
-    @media @mobile {
-      width: 19px;
-    }
-  }
-
-  @media @tablet {
+  @media (min-width: @tablet) {
     position: absolute;
     left: 0;
   }
@@ -41,7 +36,7 @@
   margin-top: 0;
   margin-bottom: 20px;
 
-  @media @tablet {
+  @media (min-width: @tablet) {
     margin-bottom: 20px;
   }
 }
