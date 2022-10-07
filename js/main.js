@@ -1,17 +1,13 @@
 import './splide-init.js';
 import './leaflet-init.js';
 
-const navMain = document.querySelector('.main-nav');
-const navToggle = document.querySelector('.main-nav__toggle');
+(() => {
+  const navMain = document.querySelector('.main-nav');
 
-navMain.classList.remove('main-nav--no-js');
+  navMain.classList.remove('main-nav--no-js');
 
-navToggle.addEventListener('click', () => {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
-});
+  navMain.querySelector('.main-nav__toggle').addEventListener('click', () => {
+    navMain.classList.toggle('main-nav--opened');
+  });
+
+})();
